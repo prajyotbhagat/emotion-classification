@@ -1,6 +1,7 @@
+torch
 streamlit
 plotly
 numpy
 scipy
 librosa
-torch
+
