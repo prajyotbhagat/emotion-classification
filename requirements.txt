@@ -1,5 +1,5 @@
 streamlit==1.46.0
-numpy
+numpy==1.26.4
 scipy
 pandas
 matplotlib
