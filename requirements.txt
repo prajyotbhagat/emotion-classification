@@ -4,4 +4,4 @@ plotly
 numpy
 scipy
 librosa
-
+torchvision
