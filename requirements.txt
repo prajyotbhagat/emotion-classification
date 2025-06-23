@@ -5,12 +5,12 @@ pandas
 matplotlib
 plotly
 
-# Deep learning (compatible with Python 3.10)
+# Deep learning
 torch==2.1.2
 torchvision==0.16.2
 torchaudio==2.1.2
 
-# Audio
+# Audio processing
 librosa
 soundfile
 scikit-learn
@@ -19,6 +19,7 @@ scikit-learn
 opencv-python-headless
 joblib
 requests
+
 
 
 
