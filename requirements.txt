@@ -1,18 +1,21 @@
 streamlit==1.46.0
 numpy
 scipy
+pandas
 matplotlib
 plotly
-pandas
-torch==2.1.2
-torchvision==0.16.2
-torchaudio==2.1.2
 librosa
 soundfile
 scikit-learn
 opencv-python-headless
 joblib
 requests
+
+# Torch packages (compatible with Python 3.10)
+torch==2.1.2
+torchvision==0.16.2
+torchaudio==2.1.2
+
 
 
 
