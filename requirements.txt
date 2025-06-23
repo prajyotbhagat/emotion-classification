@@ -1,7 +1,9 @@
 torch
+torchvision
+torchaudio
 streamlit
+librosa
 plotly
 numpy
 scipy
-librosa
-torchvision
+
