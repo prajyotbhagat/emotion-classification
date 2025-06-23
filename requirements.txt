@@ -1,26 +1,24 @@
-# Core dependencies
 streamlit==1.46.0
 numpy
 scipy
 pandas
+matplotlib
+plotly
 
-# Deep learning (latest compatible)
-torch==2.5.1
-torchvision==0.18.1
-torchaudio==2.5.1
+# Deep learning (compatible with Python 3.10)
+torch==2.1.2
+torchvision==0.16.2
+torchaudio==2.1.2
 
-# Audio processing
+# Audio
 librosa
 soundfile
 scikit-learn
 
-# Visualization
-matplotlib
-plotly
-opencv-python-headless  # Avoids GUI issues on servers
-
 # Misc
+opencv-python-headless
 joblib
 requests
+
 
 
