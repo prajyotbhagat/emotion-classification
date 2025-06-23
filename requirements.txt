@@ -1,9 +1,28 @@
+# Core dependencies
+streamlit
+numpy
+scipy
+matplotlib
+plotly
+pandas
+
+# Deep learning
 torch
 torchvision
 torchaudio
-streamlit
+
+# Audio processing
 librosa
+soundfile
+scikit-learn
+
+# Visualization
+opencv-python-headless  # Avoids GUI issues on servers
+matplotlib
 plotly
-numpy
-scipy
+
+# Misc
+joblib
+requests
+
 
