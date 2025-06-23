@@ -1,11 +1,26 @@
-torch==2.2.1
-torchvision==0.17.1
-torchaudio==2.2.1
-streamlit==1.33.0
-librosa==0.10.1
-scikit-learn==1.4.2
-matplotlib==3.8.4
-plotly==5.21.0
-opencv-python-headless==4.9.0.80
+# Core dependencies
+streamlit==1.46.0
+numpy
+scipy
+pandas
+
+# Deep learning (latest compatible)
+torch==2.5.1
+torchvision==0.18.1
+torchaudio==2.5.1
+
+# Audio processing
+librosa
+soundfile
+scikit-learn
+
+# Visualization
+matplotlib
+plotly
+opencv-python-headless  # Avoids GUI issues on servers
+
+# Misc
+joblib
+requests
 
 
