@@ -5,8 +5,15 @@ import librosa
 from model import VGG16LSTM
 
 
+
+
+
+#input
+AUDIO_PATH = "audio.mp3"
+
+
+
 MODEL_PATH = "emotion_model.pth"
-AUDIO_PATH = "Bailando-Enrique-Iglesias.mp3" 
 SR = 16000
 N_MELS = 128
 MAX_LEN = 3
