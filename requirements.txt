@@ -1,9 +1,10 @@
+# Core dependencies
 streamlit==1.46.0
 numpy
 scipy
-pandas
 matplotlib
 plotly
+pandas
 
 # Deep learning
 torch==2.1.2
@@ -15,10 +16,13 @@ librosa
 soundfile
 scikit-learn
 
-# Misc
-opencv-python-headless
+# Visualization
+opencv-python-headless  # Avoid GUI issues on servers
+
+# Miscellaneous
 joblib
 requests
+
 
 
 
