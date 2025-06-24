@@ -24,7 +24,7 @@ This SER system focuses on identifying human emotions such as **happy, sad, angr
    - Normalized and padded/truncated to ensure uniform input dimensions
 
 3. **Dataset Splitting**:
-   - Data is split into training, validation, and test sets using `train_test_split`
+   - Data is split into training(80%) and validation(20%) sets using `train_test_split`
 
 ---
 
