@@ -82,7 +82,7 @@ The test script will output the predicted emotion.
 - `torchaudio`
 - `torch`
 - `scikit-learn`
-- `matplotlib` (for visualization, if used)
+- `matplotlib` 
 
 ---
 
