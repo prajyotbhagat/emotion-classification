@@ -19,7 +19,7 @@ This SER system focuses on identifying human emotions such as **happy, sad, angr
    - Actor ID and gender
 
 2. **Audio Feature Extraction**:
-   - Each `.wav` file is loaded using `librosa` or `torchaudio`
+   - Each `.wav` file is loaded using `librosa`
    - Converted to **Mel-Spectrograms** with `n_mels = 128`
    - Normalized and padded/truncated to ensure uniform input dimensions
 
