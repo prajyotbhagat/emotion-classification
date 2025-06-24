@@ -77,7 +77,7 @@ The test script will output the predicted emotion.
 
 ## 📦 Dependencies
 
-- Python 3.10
+- Python 3.10.13
 - `librosa`
 - `torchaudio`
 - `torch`
