@@ -86,8 +86,3 @@ The test script will output the predicted emotion.
 
 ---
 
-## 🚀 Future Improvements
-
-- Use transformer-based models like Wav2Vec2.0
-- Real-time emotion inference with microphone input
-- Multimodal emotion recognition with video
