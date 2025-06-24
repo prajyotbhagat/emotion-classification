@@ -6,7 +6,7 @@ This project aims to classify emotions from audio samples using a deep learning 
 
 ## 📁 Project Description
 
-This SER system focuses on identifying human emotions such as **happy, sad, angry, neutral, calm, surprised, etc.**, from `.wav` files. It leverages a combination of CNN (e.g., VGG16) and LSTM architectures, trained on processed features extracted from the RAVDESS dataset and possibly other emotional speech corpora.
+This SER system focuses on identifying human emotions such as **happy, sad, angry, neutral, calm, surprised, etc.**, from `.wav` files. It leverages a combination of CNN (e.g., VGG16) and LSTM architectures, trained on processed features extracted from the RAVDESS dataset.
 
 ---
 
