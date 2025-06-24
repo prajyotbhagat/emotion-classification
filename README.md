@@ -50,14 +50,14 @@ This SER system focuses on identifying human emotions such as **happy, sad, angr
 The performance was evaluated using:
 
 - **Accuracy Score**
-- **F1 Score (macro)**: To account for class imbalance
+- **F1 Score**
 - **Classification Report**: Detailed per-class precision, recall, and F1-score
 
 **Sample Results:**
 | Metric        | Value   |
 |---------------|---------|
 | Accuracy      | 85.2%   |
-| F1 Score (Macro Avg) | 83.7%   |
+| F1 Score | 83.7%   |
 
 ---
 
