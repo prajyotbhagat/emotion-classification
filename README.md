@@ -40,7 +40,7 @@ This SER system focuses on identifying human emotions such as **happy, sad, angr
 - Loss Function: `CrossEntropyLoss`
 - Optimizer: `Adam`
 - Scheduler: Optional learning rate scheduler
-- Epochs: Typically trained over 30 epochs
+- Epochs: Trained over 30 epochs
 - Batch size: 16 
 
 ---
