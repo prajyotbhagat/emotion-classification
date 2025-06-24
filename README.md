@@ -61,6 +61,9 @@ The performance was evaluated using:
 
 ---
 
+![Model Pipeline](model_performance.png)
+
+
 ## 🧪 How to Test
 
 ```bash
