@@ -1,29 +1,21 @@
 import torch
-import torch.nn as nn
 import numpy as np
 import librosa
+import argparse
+import os
 from model import VGG16LSTM
 
-
-
-
-
-#input
-AUDIO_PATH = "audio.mp3"
-
-
-
+# Constants
 MODEL_PATH = "emotion_model.pth"
 SR = 16000
 N_MELS = 128
 MAX_LEN = 3
 
-
+# Label mapping
 idx2label = {
     0: "angry", 1: "calm", 2: "disgust", 3: "fearful",
     4: "happy", 5: "neutral", 6: "sad", 7: "surprised"
 }
-
 
 def load_model():
     model = VGG16LSTM(num_classes=8, fine_tune=False)
@@ -31,10 +23,8 @@ def load_model():
     model.eval()
     return model
 
-
 def preprocess_audio(path, sr=SR, n_mels=N_MELS, max_len=MAX_LEN):
     y, _ = librosa.load(path, sr=sr)
-
     target_len = sr * max_len
     if len(y) < target_len:
         y = np.pad(y, (0, target_len - len(y)))
@@ -49,7 +39,6 @@ def preprocess_audio(path, sr=SR, n_mels=N_MELS, max_len=MAX_LEN):
     melspec_db = (melspec_db - melspec_db.mean()) / (melspec_db.std() + 1e-6)
     return torch.tensor(melspec_db).unsqueeze(0).unsqueeze(0).float()
 
-
 def predict(audio_path):
     model = load_model()
     tensor_input = preprocess_audio(audio_path)
@@ -61,7 +50,15 @@ def predict(audio_path):
 
     return emotion
 
-
 if __name__ == "__main__":
-    emotion = predict(AUDIO_PATH)
-    print(f"Predicted Emotion: {emotion.upper()}")
+    parser = argparse.ArgumentParser(description="Emotion prediction from audio file.")
+    parser.add_argument("--file", type=str, required=True, help="Path to the audio file (.wav or .mp3)")
+    args = parser.parse_args()
+
+    if not os.path.exists(args.file):
+        print(f"❌ File not found: {args.file}")
+        exit(1)
+
+    emotion = predict(args.file)
+    print(f"🎧 Predicted Emotion: {emotion.upper()}")
+
