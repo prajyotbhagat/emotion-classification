@@ -33,7 +33,7 @@ This SER system focuses on identifying human emotions such as **happy, sad, angr
 ### Architecture:
 
 - **Feature Extractor**: Pretrained **VGG16** CNN (excluding top layers)
-- **Temporal Modeling**: **LSTM** or **BiLSTM** layers
+- **Temporal Modeling**: **BiLSTM** layers
 - **Classifier**: Fully connected (FC) layers for final emotion prediction
 
 ### Training Details:
