@@ -61,7 +61,7 @@ The performance was evaluated using:
 
 ---
 
-![Model Pipeline](model_performance.png)
+![Model Pipeline](performance_model.png)
 
 
 ## 🧪 How to Test
